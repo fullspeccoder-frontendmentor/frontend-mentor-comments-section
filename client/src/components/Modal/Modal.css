@@ -1,0 +1,67 @@
+.Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 1rem;
+  background-color: #0009;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal > .form {
+  padding: 1rem 1.25rem;
+  border: 1px solid #c1c1c133;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  background-color: var(--very-light-gray);
+  border-radius: 10px;
+}
+
+.Modal > .form > h4 {
+  font-size: 1.25rem;
+  font-weight: var(--light-font);
+}
+
+.Modal > .form > p {
+  margin: 1rem 0;
+  color: var(--gray-blue);
+}
+
+.Modal > .form > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Modal > .form > div > button {
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  color: var(--light-gray);
+  font-weight: var(--norm-font);
+}
+
+.Modal > .form > div > button:last-of-type {
+  background-color: var(--soft-red);
+}
+
+.Modal > .form > div > button:first-of-type {
+  background-color: var(--gray-blue);
+}
+
+.Modal > .form > div > button:last-of-type:hover {
+  background-color: var(--pale-red);
+  cursor: pointer;
+}
+
+.Modal > .form > div > button:first-of-type:hover {
+  background-color: var(--light-gray-blue);
+  cursor: pointer;
+}
