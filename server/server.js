@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
-const data = require("./data/data.json");
+const userData = require("./data/userData.json");
+const userRouter = require("./routes/users");
+
+app.use("/users", userRouter);
 
 app.get("/api", (req, res) => {
-  res.json(data);
+  res.json(userData);
 });
 
 app.listen(4000, () => {
