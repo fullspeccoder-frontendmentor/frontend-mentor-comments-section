@@ -31,6 +31,11 @@ body {
   min-height: 100vh;
   background-color: var(--very-light-gray);
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .Comments {
@@ -38,13 +43,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   gap: 1rem;
+  width: 100%;
 }
 
 .Comment {
   background-color: var(--white);
   padding: 1.05rem 1rem;
+  width: 75%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

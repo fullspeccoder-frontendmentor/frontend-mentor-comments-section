@@ -1,0 +1,40 @@
+.user-indication {
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  background-color: var(--moderate-blue);
+  color: var(--white);
+}
+
+.current-user-options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.current-user-options > span:first-of-type {
+  color: var(--soft-red);
+}
+
+.current-user-options > span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.Comment textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.75rem 1rem;
+  margin: 1.05rem 1rem;
+  border-radius: 7px;
+  border-color: var(--light-gray);
+  resize: none;
+}
+
+.edit-button {
+  border-radius: 7px;
+  border: none;
+  background-color: var(--moderate-blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+}

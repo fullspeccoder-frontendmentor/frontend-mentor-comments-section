@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.css";
 
-const Modal = () => {
+const Modal = ({ onCancel, onDelete }) => {
   return (
     <div className="Modal">
       <div className="form">
@@ -11,8 +11,8 @@ const Modal = () => {
           comment and can't be undone.
         </p>
         <div>
-          <button>NO, CANCEL</button>
-          <button>YES, DELETE</button>
+          <button onClick={onCancel}>NO, CANCEL</button>
+          <button onClick={onDelete}>YES, DELETE</button>
         </div>
       </div>
     </div>
