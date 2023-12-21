@@ -8,14 +8,22 @@ function App() {
   useEffect(() => {
     fetch("/users")
       .then((res) => res.json())
-      .then((data) => setBackendData(data));
+      .then((data) => {
+        setBackendData(data);
+      });
   }, []);
+
+  useEffect(() => {
+    sessionStorage.setItem("username", backendData.currentUser?.username);
+  }, [backendData]);
+
+  console.log(sessionStorage);
 
   return (
     <div className="App">
       <div className="Comments">
-        {backendData.comments?.map((comment) => (
-          <Comment commentObj={comment} />
+        {backendData.comments?.map((comment, ind) => (
+          <Comment key={ind} commentObj={comment} />
         ))}
       </div>
     </div>

@@ -12,6 +12,9 @@ const Comment = ({ commentObj }) => {
           alt={`${user.username}'s profile`}
         />
         <span>{user.username}</span>
+        {sessionStorage.username === user.username && (
+          <span className="user-indication">you</span>
+        )}
         <span>{createdAt}</span>
       </div>
       <p className="comment-text">{content}</p>
